@@ -1,0 +1,26 @@
+import java.util.Scanner;
+import java.math.*;
+
+public class Solution {
+
+	public static void main(String[] args) {
+		try (Scanner input = new Scanner(System.in)) {
+			String a = input.next();
+			String b = input.next();
+
+			BigInteger aa = new BigInteger(a);
+			BigInteger bb = new BigInteger(b);
+
+			BigInteger sum = aa.add(bb);
+			BigInteger pro = aa.multiply(bb);
+			BigInteger divv = aa.divide(bb);
+			BigInteger diff = aa.subtract(bb);
+
+			System.out.println(a + "+" + b + "=" + sum);
+			System.out.println(a + "-" + b + "=" + diff);
+			System.out.println(a + "*" + b + "=" + pro);
+			System.out.println(a + "/" + b + "=" + divv);
+		}
+
+	}
+}
